@@ -1,0 +1,705 @@
+{
+    "index": {
+        "headTitle": "美食坊",
+        "banner": [{
+            "dataId":"01",
+                "img": "/static/img/banner/banner01.png",
+                "text": "诱惑挡不住"
+            }, {
+            "dataId":"02",
+                "img": "/static/img/banner/banner02.png",
+                "text": ""
+            },
+            {
+                "dataId":"03",
+                "img": "/static/img/banner/banner03.png",
+                "text": "美食任你吃"
+            }
+        ],
+        "sideMenu1": {
+            "borderNeed": false,
+            "mainData": [{
+                "dataId":"01",
+                "img": "/static/img/indexSideMenu/chaoshi.png",
+                "text": "超市",
+                "link": "#"
+            }, {
+                "dataId":"02",
+                "img": "/static/img/indexSideMenu/rou.png",
+                "text": "肉肉",
+                "link": "#"
+            }, {
+                "dataId":"03",
+                "img": "/static/img/indexSideMenu/shaokao.png",
+                "text": "烧烤",
+                "link": "#"
+            },
+                {
+                    "dataId":"04",
+                    "img": "/static/img/indexSideMenu/shucai.png",
+                    "text": "蔬菜",
+                    "link": "#"
+                }, {
+                    "dataId":"05",
+                    "img": "/static/img/indexSideMenu/shuiguo.png",
+                    "text": "水果",
+                    "link": "#"
+                }
+            ]
+        },
+        "sideMenu2": {
+            "borderNeed": false,
+            "mainData": [{
+                "dataId":"06",
+                "img": "/static/img/indexSideMenu/jiu.png",
+                "text": "酒水",
+                "link": "#"
+            }, {
+                "dataId":"07",
+                "img": "/static/img/indexSideMenu/qiju.png",
+                "text": "餐具",
+                "link": "#"
+            }, {
+                "dataId":"08",
+                "img": "/static/img/indexSideMenu/zhushi.png",
+                "text": "主食",
+                "link": "#"
+            },
+                {
+                    "dataId":"09",
+                    "img": "/static/img/indexSideMenu/remai.png",
+                    "text": "热卖",
+                    "link": "#"
+                }, {
+                    "dataId":"10",
+                    "img": "/static/img/indexSideMenu/tiaowei.png",
+                    "text": "调味",
+                    "link": "#"
+                }
+            ]
+        },
+        "news": [
+            {
+            "iconNumber": "0",
+            "text": "要找好吃的，未必高大上，小吃，才真正够味儿。某种意义上，一种或几种小吃，往往代表了一个城市的饮食文化，成为一个城市的金字招牌。日前，中国旅游协会、"
+            },
+            {
+                "iconNumber": "1",
+                "text": "驴肉火烧讲究“七分火烧三分驴肉”，就是说包裹着驴肉的这个火烧皮非常重要。李春秋驴肉火烧的火烧皮有四绝，“色如金、酥如雪、薄如纸、厚如书”。"
+            },
+            {
+                "iconNumber": "2",
+                "text": "冻鱼保鲜保营养吗?  最近关于活鱼的事儿备受关注，而当活鱼玩失踪的时候，内心感到最忐忑的恐怕应该是——冷冻鱼。"
+            },
+            {
+                "iconNumber": "3",
+                "text": "哪些啤酒谣言还在飞?新华网北京1月17日电(胡可璐)“使用啤酒花浸膏的就是‘化学啤酒’，‘啤酒肚’是喝啤酒喝出来的，啤酒嘌呤含量高导致痛风”，"
+            },
+            {
+                "iconNumber": "0",
+                "text": "据悉，上一站为期一个月的城市广场美食嘉年华活动正如火如荼进行中，取得了良好效益，很快将进入优秀菜品评审阶段。明天在大浪商业中心举行的美食嘉年华活动也将持续一个月"
+            },
+            {
+                "iconNumber": "1",
+                "text": "某品牌长沙分店被曝光，厨师无健康证、用扫把洗锅、厨师徒手“偷吃”客人菜肴、回收剩菜。"
+            },
+            {
+                "iconNumber": "2",
+                "text": "红烧肉这么做最好吃！现在知道还不晚！"
+            },
+            {
+                "iconNumber": "1",
+                "text": "某麻辣烫品牌被曝光骨汤熬制造假，面筋馊了不丢弃继续卖，用浑浊的水刷餐具。"
+            }
+        ],
+        "indexListData": [
+            {
+            "dataId": "01",
+            "user":"xiao mei1",
+            "browseTime":"6597",
+            "collection":"1205",
+                "score":4.5,
+                "ratingsPeople":1500,
+                "boutique":true,
+                "postTime":"10-30分钟",
+                "hardLevel":"初级（切墩）",
+                "descript":"蛋白质多多，营养好滋味",
+                "stuffList":[
+                                                {
+                                                    "name":"乌鸡",
+                                                    "number":"半只"
+                                                },
+                                                {
+                                                    "name":"天麻",
+                                                    "number":"6-8片"
+                                                },{
+                                                    "name":"红枣",
+                                                    "number":"3-5个"
+                                                },{
+                                                    "name":"当归",
+                                                    "number":"3-5片"
+                                                },
+                                                {
+                                                    "name":"姜",
+                                                    "number":"1块"
+                                                }
+                                            ],
+            "listPic": "/static/img/indexList/indexList01.png",
+            "listTitle": "鱼香肉丝",
+            "listText": " 美食的诱惑，爱情的支持与陪伴、迷途人生的不安与豁然，给我们拥有无数的思考和感动。电影中朱莉坚持并做到了365天内照食谱做出524种菜肴，从兴趣到职业，发现自己的人生价值。"
+        }, {
+            "dataId": "02",
+            "user":"xiao mei2",
+            "browseTime":"4597",
+            "collection":"305",
+                "score":3.9,
+                "ratingsPeople":1560,
+                "boutique":true,
+                "postTime":"50分钟",
+                "hardLevel":"初级",
+                "descript":"蛋白质多多，营养好滋味",
+                "stuffList":[
+                    {
+                        "name":"乌鸡",
+                        "number":"半只"
+                    },
+                    {
+                        "name":"天麻",
+                        "number":"6-8片"
+                    },{
+                        "name":"红枣",
+                        "number":"3-5个"
+                    },{
+                        "name":"当归",
+                        "number":"3-5片"
+                    },
+                    {
+                        "name":"姜",
+                        "number":"1块"
+                    }
+                ],
+            "listPic": "/static/img/indexList/indexList02.png",
+            "listTitle": "五瓣花装饰抹茶马卡龙",
+            "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+        }, {
+            "dataId": "03",
+            "user":"xiao mei3",
+            "browseTime":"15787",
+            "collection":"4045",
+                "score":4.2,
+                "ratingsPeople":1500,
+                "boutique":false,
+                "postTime":"10-30分钟",
+                "hardLevel":"初级（切墩）",
+                "descript":"蛋白质多多，营养好滋味",
+                "stuffList":[
+                    {
+                        "name":"乌鸡",
+                        "number":"半只"
+                    },
+                    {
+                        "name":"天麻",
+                        "number":"6-8片"
+                    },{
+                        "name":"红枣",
+                        "number":"3-5个"
+                    },{
+                        "name":"当归",
+                        "number":"3-5片"
+                    },
+                    {
+                        "name":"姜",
+                        "number":"1块"
+                    }
+                ],
+            "listPic": "/static/img/indexList/indexList03.png",
+            "listTitle": "周末】把“成都”搬到你面前",
+            "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+        },
+            {
+                "dataId": "04",
+                "user":"xiao mei4",
+                "browseTime":"6597",
+                "collection":"1205",
+                "listPic": "/static/img/indexList/indexList01.png",
+                "listTitle": "鱼香肉丝",
+                "listText": " 美食的诱惑，爱情的支持与陪伴、迷途人生的不安与豁然，给我们拥有无数的思考和感动。电影中朱莉坚持并做到了365天内照食谱做出524种菜肴，从兴趣到职业，发现自己的人生价值。"
+            }, {
+                "dataId": "05",
+                "user":"xiao mei5",
+                "browseTime":"4597",
+                "collection":"305",
+                "listPic": "/static/img/indexList/indexList02.png",
+                "listTitle": "五瓣花装饰抹茶马卡龙",
+                "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+            }, {
+                "dataId": "06",
+                "user":"xiao mei6",
+                "browseTime":"15787",
+                "collection":"4045",
+                "listPic": "/static/img/indexList/indexList03.png",
+                "listTitle": "周末】把“成都”搬到你面前",
+                "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+            },{
+                "dataId": "07",
+                "user":"xiao mei7",
+                "browseTime":"6597",
+                "collection":"1205",
+                "listPic": "/static/img/indexList/indexList01.png",
+                "listTitle": "鱼香肉丝",
+                "listText": " 美食的诱惑，爱情的支持与陪伴、迷途人生的不安与豁然，给我们拥有无数的思考和感动。电影中朱莉坚持并做到了365天内照食谱做出524种菜肴，从兴趣到职业，发现自己的人生价值。"
+            }, {
+                "dataId": "08",
+                "user":"xiao mei8",
+                "browseTime":"4597",
+                "collection":"305",
+                "listPic": "/static/img/indexList/indexList02.png",
+                "listTitle": "五瓣花装饰抹茶马卡龙",
+                "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+            }, {
+                "dataId": "09",
+                "user":"xiao mei9",
+                "browseTime":"15787",
+                "collection":"4045",
+                "listPic": "/static/img/indexList/indexList03.png",
+                "listTitle": "周末】把“成都”搬到你面前",
+                "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+            }, {
+                "dataId": "10",
+                "user":"xiao mei10",
+                "browseTime":"4597",
+                "collection":"305",
+                "listPic": "/static/img/indexList/indexList02.png",
+                "listTitle": "五瓣花装饰抹茶马卡龙",
+                "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+            }, {
+                "dataId": "11",
+                "user":"xiao mei11",
+                "browseTime":"15787",
+                "collection":"4045",
+                "listPic": "/static/img/indexList/indexList03.png",
+                "listTitle": "周末】把“成都”搬到你面前",
+                "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+            },
+            {
+                "dataId": "12",
+                "user":"xiao mei12",
+                "browseTime":"6597",
+                "collection":"1205",
+                "listPic": "/static/img/indexList/indexList01.png",
+                "listTitle": "鱼香肉丝",
+                "listText": " 美食的诱惑，爱情的支持与陪伴、迷途人生的不安与豁然，给我们拥有无数的思考和感动。电影中朱莉坚持并做到了365天内照食谱做出524种菜肴，从兴趣到职业，发现自己的人生价值。"
+            }, {
+                "dataId": "13",
+                "user":"xiao mei13",
+                "browseTime":"4597",
+                "collection":"305",
+                "listPic": "/static/img/indexList/indexList02.png",
+                "listTitle": "五瓣花装饰抹茶马卡龙",
+                "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+            }, {
+                "dataId": "14",
+                "user":"xiao mei14",
+                "browseTime":"15787",
+                "collection":"4045",
+                "listPic": "/static/img/indexList/indexList03.png",
+                "listTitle": "周末】把“成都”搬到你面前",
+                "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+            },{
+                "dataId": "15",
+                "user":"xiao mei15",
+                "browseTime":"6597",
+                "collection":"1205",
+                "listPic": "/static/img/indexList/indexList01.png",
+                "listTitle": "鱼香肉丝",
+                "listText": " 美食的诱惑，爱情的支持与陪伴、迷途人生的不安与豁然，给我们拥有无数的思考和感动。电影中朱莉坚持并做到了365天内照食谱做出524种菜肴，从兴趣到职业，发现自己的人生价值。"
+            }, {
+                "dataId": "16",
+                "user":"xiao mei16",
+                "browseTime":"4597",
+                "collection":"305",
+                "listPic": "/static/img/indexList/indexList02.png",
+                "listTitle": "五瓣花装饰抹茶马卡龙",
+                "listText": "只要有时间，我都会做一次马卡龙，只是因为纯粹的爱好，也是因为孩子爱吃。纵使小马虐我千百遍，我待小马仍如初恋。现在，孩子只爱吃我做的马卡龙，还能把我总结的“小马精神”理解为“爱因斯坦精神”：不怕失败、不畏困难，"
+            }, {
+                "dataId": "17",
+                "user":"xiao mei17",
+                "browseTime":"15787",
+                "collection":"4045",
+                "listPic": "/static/img/indexList/indexList03.png",
+                "listTitle": "周末】把“成都”搬到你面前",
+                "listText": "钵钵鸡、水煮鱼、麻辣兔兔、酸辣粉、担担面、辣子鸡、口水鸡  你可能会说，“这些好吃是好吃可是太难了，我也很绝望啊"
+            }
+        ]
+    },
+    "recommendation": {
+        "banner": [{
+            "dataId":"01",
+            "img": "/static/img/banner/banner01.png",
+            "text": "诱惑挡不住"
+        }, {
+            "dataId":"02",
+            "img": "/static/img/banner/banner02.png",
+            "text": ""
+        },
+            {
+                "dataId":"03",
+                "img": "/static/img/banner/banner03.png",
+                "text": "美食任你吃"
+            }
+        ],
+        "sideMenu": {
+            "borderNeed": true,
+            "mainData": [{
+                "img": "/static/img/recSideMenu/sideMenu01.png",
+                "text": "菜谱分类",
+                "link": "#"
+            }, {
+                "img": "/static/img/recSideMenu/sideMenu02.png",
+                "text": "视频教学",
+                "link": "#"
+            }, {
+                "img": "/static/img/recSideMenu/sideMenu03.png",
+                "text": "热门菜式",
+                "link": "#"
+            }, {
+                "img": "/static/img/recSideMenu/sideMenu04.png",
+                "text": "厨房问答",
+                "link": "#"
+            }]
+        },
+        "hotSell":{
+            "goods":[
+                {
+                    "dataId":"1",
+                    "link":"666",
+                    "img":"/static/img/hotSell/hotsell (1).png",
+                    "price":"66",
+                    "oldPrice":"80"
+                },
+                {
+                    "dataId":"2",
+                    "link":"234",
+                    "img":"/static/img/hotSell/hotsell (2).png",
+                    "price":"456",
+                    "oldPrice":"8540"
+                },
+                {
+                    "dataId":"1",
+                    "link":"666",
+                    "img":"/static/img/hotSell/hotsell (1).png",
+                    "price":"66",
+                    "oldPrice":"80"
+                },
+                {
+                    "dataId":"2",
+                    "link":"234",
+                    "img":"/static/img/hotSell/hotsell (2).png",
+                    "price":"456",
+                    "oldPrice":"8540"
+                },
+                {
+                    "dataId":"3",
+                    "link":"6345",
+                    "img":"/static/img/hotSell/hotsell (3).png",
+                    "price":"6",
+                    "oldPrice":"80"
+                },
+                {
+                    "dataId":"4",
+                    "link":"6367",
+                    "img":"/static/img/hotSell/hotsell (4).png",
+                    "price":"6488",
+                    "oldPrice":"8084674"
+                },
+                {
+                    "dataId":"1",
+                    "link":"666",
+                    "img":"/static/img/hotSell/hotsell (1).png",
+                    "price":"66",
+                    "oldPrice":"80"
+                },
+                {
+                    "dataId":"2",
+                    "link":"234",
+                    "img":"/static/img/hotSell/hotsell (2).png",
+                    "price":"456",
+                    "oldPrice":"8540"
+                },
+                {
+                    "dataId":"3",
+                    "link":"6345",
+                    "img":"/static/img/hotSell/hotsell (3).png",
+                    "price":"6",
+                    "oldPrice":"80"
+                },
+                {
+                    "dataId":"4",
+                    "link":"6367",
+                    "img":"/static/img/hotSell/hotsell (4).png",
+                    "price":"6488",
+                    "oldPrice":"8084674"
+                }
+            ]
+        }
+    },
+    "message": {
+        "banner": [{
+            "dataId":"01",
+            "img": "/static/img/banner/banner01.png",
+            "text": "诱惑挡不住"
+        }, {
+            "dataId":"02",
+            "img": "/static/img/banner/banner02.png",
+            "text": ""
+        },
+            {
+                "dataId":"03",
+                "img": "/static/img/banner/banner03.png",
+                "text": "美食任你吃"
+            }
+        ],
+        "messageList":[
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (1).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (2).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (3).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (4).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (5).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (6).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (7).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (8).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (9).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (10).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (1).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (2).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (3).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (4).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (5).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (6).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (7).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (8).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (9).png",
+                "title":"【好粥道】食粥的艺术"
+            },
+            {
+                "dataId":"01",
+                "link":"linkto",
+                "userName":"xiao mei",
+                "postTime":"35",
+                "browse":"666",
+                "comment":"220",
+                "img":"/static/img/messageList/messageList (10).png",
+                "title":"【好粥道】食粥的艺术"
+            }
+        ]
+
+    },
+    "userCenter": {
+        "title": "userCenter",
+        "userBackground":"/static/img/userCenter/userCenter (1).png",
+        "userMenuList":[
+            {
+                "icon":"/static/img/userCenter/userCenter (2).png",
+                "menuName":"mei美消息",
+                "nextIcon":"true",
+                "dataId":"01"
+            },
+            {
+                "icon":"/static/img/userCenter/userCenter (3).png",
+                "menuName":"我的动态",
+                "nextIcon":"true",
+                "dataId":"01"
+            },
+            {
+                "icon":"/static/img/userCenter/userCenter (4).png",
+                "menuName":"菜谱收藏",
+                "nextIcon":"true",
+                "dataId":"01"
+            },
+            {
+                "icon":"/static/img/userCenter/userCenter (5).png",
+                "menuName":"达人关注",
+                "nextIcon":"true",
+                "dataId":"01"
+            },
+            {
+                "icon":"/static/img/userCenter/userCenter (6).png",
+                "menuName":"想法建议",
+                "nextIcon":"true",
+                "dataId":"01"
+            }
+        ]
+
+    }
+}

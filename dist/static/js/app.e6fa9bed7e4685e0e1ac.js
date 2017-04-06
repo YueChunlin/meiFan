@@ -2,8 +2,9 @@ webpackJsonp([0],[
 /* 0 */,
 /* 1 */,
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 /*
  *  setGlobalfontSize 设置全局页面字体大小方法
  *  params-1 number
@@ -13,6 +14,7 @@ function setGlobalfontSize(size) {
     var width = oHtml.getBoundingClientRect().width;
     oHtml.style.fontSize = width / size + 'px';
 }
+
 function scrollUp(obj, refreshState) {
     let self = obj;
     let scrollTop = document.body.scrollTop;
@@ -38,6 +40,7 @@ function locationPushUser(user, listName, dataUp) {
         window.localStorage.setItem(listName, JSON.stringify(storage));
     }
 }
+
 function locationGetUser(userName, listName) {
     let userData = null;
     let storage = window.localStorage.getItem(listName);
@@ -51,12 +54,12 @@ function locationGetUser(userName, listName) {
 }
 
 //这个module 就相当 es6里面的 export
-module.exports = {
+/* harmony default export */ __webpack_exports__["a"] = ({
     setFontSize: setGlobalfontSize,
     scrollUp: scrollUp,
     locationPushUser: locationPushUser,
     locationGetUser: locationGetUser
-};
+});
 
 /***/ }),
 /* 3 */,
@@ -295,10 +298,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes: [{
-        path: '/home',
+        path: '/',
         component: __WEBPACK_IMPORTED_MODULE_3__components_home_home_vue___default.a,
         children: [{
-            path: 'index',
+            path: '/',
             component: __WEBPACK_IMPORTED_MODULE_2__components_index_index_vue___default.a
         }, {
             path: 'recomendation',
@@ -1883,12 +1886,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.currentIndex = 0
+        _vm.currentItem(0)
       }
     }
   }, [_c('router-link', {
     attrs: {
-      "to": "/home/index"
+      "to": "/"
     }
   }, [_c('span', {
     staticClass: "icon-home"
@@ -1898,12 +1901,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.currentIndex = 1
+        _vm.currentItem(1)
       }
     }
   }, [_c('router-link', {
     attrs: {
-      "to": "/home/recomendation"
+      "to": "/recomendation"
     }
   }, [_c('span', {
     staticClass: "icon-food"
@@ -1913,12 +1916,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.currentIndex = 2
+        _vm.currentItem(2)
       }
     }
   }, [_c('router-link', {
     attrs: {
-      "to": "/home/message"
+      "to": "/message"
     }
   }, [_c('span', {
     staticClass: "icon-comments-alt"
@@ -1928,12 +1931,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.currentIndex = 3
+        _vm.currentItem(3)
       }
     }
   }, [_c('router-link', {
     attrs: {
-      "to": "/home/userCenter"
+      "to": "/userCenter"
     }
   }, [_c('span', {
     staticClass: " icon-user"
@@ -2294,8 +2297,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     beforeRouteEnter(to, from, next) {
         let dataId = to.params.dataId;
         next(function (vm) {
-            vm.$http.get('./api/index').then(function (data) {
-                let dataList = data.data.data.indexListData;
+            vm.$http.get('../../../static/data.json').then(function (data) {
+                let dataList = data.data.index.indexListData;
                 for (var i = 0; i < dataList.length; i++) {
                     if (dataId == dataList[i].dataId) {
                         vm.dataAll = dataList[i];
@@ -2489,6 +2492,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             currentIndex: 0
         };
+    },
+    mounted() {
+        this.$nextTick(function () {
+            if (localStorage.currentIndex) {
+                this.currentIndex = localStorage.currentIndex;
+            } else {
+                this.currentIndex = 0;
+            }
+        });
+    },
+    methods: {
+        currentItem(x) {
+            localStorage.currentIndex = x;
+            if (localStorage.currentIndex) {
+                this.currentIndex = localStorage.currentIndex;
+            } else {
+                this.currentIndex = 0;
+            }
+        }
     }
 });
 
@@ -2819,7 +2841,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__indexList_indexList_vue__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__indexList_indexList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__indexList_indexList_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__public_js_tools_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__public_js_tools_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__public_js_tools_js__);
 //
 //
 //
@@ -2887,7 +2908,7 @@ const err_ok = 0;
     mounted() {
         let self = this;
         window.onscroll = function () {
-            __WEBPACK_IMPORTED_MODULE_7__public_js_tools_js___default.a.scrollUp(self, self.refreshState);
+            __WEBPACK_IMPORTED_MODULE_7__public_js_tools_js__["a" /* default */].scrollUp(self, self.refreshState);
         };
     },
     methods: {
@@ -2935,12 +2956,9 @@ const err_ok = 0;
             }
         },
         reload() {
-            this.$http.get("./api/index").then(res => {
-                let data = res.data;
-                if (data.errno === err_ok) {
-                    this.dataAll = data.data;
-                    this.indexList = this.dataAll.indexListData.slice(0, this.indexListLength);
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+                this.dataAll = res.data.index;
+                this.indexList = this.dataAll.indexListData.slice(0, this.indexListLength);
             });
         }
     }
@@ -2953,7 +2971,6 @@ const err_ok = 0;
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_js_tools__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_js_tools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_js_tools__);
 //
 //
 //
@@ -3009,13 +3026,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             let username = this.userCount,
                 passward = this.userPassWard;
             //                ***********查找本地用户*****
-            let userState = __WEBPACK_IMPORTED_MODULE_0__public_js_tools___default.a.locationGetUser(username, "locationUser");
+            let userState = __WEBPACK_IMPORTED_MODULE_0__public_js_tools__["a" /* default */].locationGetUser(username, "locationUser");
             if (userState) {
                 if (passward === userState.passWard) {
                     this.loginOk = true;
                     let self = this;
-                    __WEBPACK_IMPORTED_MODULE_0__public_js_tools___default.a.locationPushUser(userState, "currentUser");
-                    console.log(localStorage);
+                    __WEBPACK_IMPORTED_MODULE_0__public_js_tools__["a" /* default */].locationPushUser(userState, "currentUser");
                     setTimeout(function () {
                         self.$router.replace("/home/index");
                     }, 3000);
@@ -3142,7 +3158,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__msgListItem_msgListItem_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__msgListItem_msgListItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__msgListItem_msgListItem_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__public_js_tools_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__public_js_tools_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__public_js_tools_js__);
 //
 //
 //
@@ -3187,12 +3202,9 @@ const err_ok = 0;
     },
     beforeMount() {
         this.$nextTick(function () {
-            this.$http.get("./api/message").then(res => {
-                let data = res.data;
-                if (data.errno === err_ok) {
-                    this.dataAll = data.data;
-                    this.addList();
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+                this.dataAll = res.data.message;
+                this.addList();
             });
         });
     },
@@ -3204,7 +3216,7 @@ const err_ok = 0;
     mounted() {
         let self = this;
         window.onscroll = function () {
-            __WEBPACK_IMPORTED_MODULE_3__public_js_tools_js___default.a.scrollUp(self, self.refreshState);
+            __WEBPACK_IMPORTED_MODULE_3__public_js_tools_js__["a" /* default */].scrollUp(self, self.refreshState);
         };
     },
     methods: {
@@ -3252,11 +3264,8 @@ const err_ok = 0;
             }
         },
         reload() {
-            this.$http.get("./api/message").then(res => {
-                let data = res.data;
-                if (data.errno === err_ok) {
-                    this.dataAll = data.data;
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+                this.dataAll = res.data.message;
             });
         }
     }
@@ -3400,19 +3409,13 @@ const err_ok = 0;
     },
     beforeMount() {
         this.$nextTick(function () {
-            this.$http.get("./api/recommendation").then(res => {
-                let data = res.data;
-                if (data.errno === err_ok) {
-                    this.recData = data.data;
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+                this.recData = res.data.recommendation;
             });
 
-            this.$http.get("./api/index").then(response => {
-                let indexData = response.data;
-                if (indexData.errno === err_ok) {
-                    this.indexData = indexData.data;
-                    this.indexList = this.indexData.indexListData.slice(0, 10);
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+                this.dataAll = res.data.index;
+                this.indexList = this.dataAll.indexListData.slice(0, this.indexListLength);
             });
         });
     },
@@ -3434,7 +3437,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_triangle_vue__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_triangle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__login_triangle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_js_tools__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_js_tools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__public_js_tools__);
 //
 //
 //
@@ -3610,7 +3612,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         register() {
             let userNumber = this.userPhoneNumber;
-            let userExist = __WEBPACK_IMPORTED_MODULE_1__public_js_tools___default.a.locationGetUser(userNumber, "locationUser");
+            let userExist = __WEBPACK_IMPORTED_MODULE_1__public_js_tools__["a" /* default */].locationGetUser(userNumber, "locationUser");
             if (userExist) {
                 alert("用户已经注册，请登录");
             } else {
@@ -3623,7 +3625,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 user.phoneNumber = this.userPhoneNumber;
                 user.passWard = this.userPassWard;
                 //                **************加入到location中***********
-                __WEBPACK_IMPORTED_MODULE_1__public_js_tools___default.a.locationPushUser(user, "locationUser");
+                __WEBPACK_IMPORTED_MODULE_1__public_js_tools__["a" /* default */].locationPushUser(user, "locationUser");
                 //                *******跳转到登录页面******
                 this.registerOk = true;
                 let self = this;
@@ -3821,7 +3823,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menuList_menuList_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menuList_menuList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__menuList_menuList_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_js_tools__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_js_tools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__public_js_tools__);
 //
 //
 //
@@ -3875,11 +3876,9 @@ const err_ok = 0;
     },
     beforeMount() {
         this.$nextTick(function () {
-            this.$http.get("/api/userCenter").then(res => {
-                let data = res.data;
-                if (data.errno === err_ok) {
-                    this.userData = data.data;
-                }
+            this.$http.get("../../../static/data.json").then(res => {
+
+                this.userData = res.data.userCenter;
             });
             let userState = localStorage.getItem("currentUser");
             if (userState) {
@@ -3917,7 +3916,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__public_js_tools_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__public_js_tools_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__public_js_tools_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__public_css_reset_css__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__public_css_reset_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__public_css_reset_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__public_css_font_awesome_min_css__ = __webpack_require__(19);
@@ -3935,7 +3933,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 //注意，现在1rem=20px,因为谷歌浏览器字体最小为12px,所以不能设置10px;
-__WEBPACK_IMPORTED_MODULE_4__public_js_tools_js___default.a.setFontSize(18.75);
+__WEBPACK_IMPORTED_MODULE_4__public_js_tools_js__["a" /* default */].setFontSize(18.75);
 //在Vue中加入$http方法，来使用AJAX请求数据；
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].prototype.$http = __WEBPACK_IMPORTED_MODULE_3_axios___default.a;
 
@@ -3951,4 +3949,4 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 
 /***/ })
 ],[131]);
-//# sourceMappingURL=app.68440278f926cb743b49.js.map
+//# sourceMappingURL=app.e6fa9bed7e4685e0e1ac.js.map
